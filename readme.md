@@ -21,26 +21,47 @@ O projeto tem como objetivo centralizar minha apresentação profissional e acad
 
 ## 🚀 Tecnologias e Recursos Utilizados
 
-Para construir uma interface moderna, responsiva e bem estruturada, foram aplicadas as seguintes tecnologias:
+Para construir uma interface moderna, acessível e responsiva, foram aplicadas as seguintes tecnologias:
 
-* 🏗️ **HTML5 Semântico:** Organização do conteúdo em seções claras (`<nav>`, `<section>`, `<footer>`) com navegação interna suave por âncoras (`#perfil`, `#projetos`, `#contato`).
-* 🎨 **CSS3:** Estilização customizada para ajuste de altura e enquadramento de imagens (`object-fit: cover`) no carrossel.
-* 🅱️ **Bootstrap 5:** Utilização do sistema de Grid responsivo (`container`, `row`, `col`), barra de navegação fixa (`navbar sticky-top`), carrossel interativo (`carousel`), cards e botões estilizados.
+* 🏗️ **HTML5 Semântico:** Organização do conteúdo em seções claras (`<nav>`, `<section>`, `<footer>`), hierarquia adequada de títulos (`<h1>`) e navegação interna suave por âncoras.
+* 🎨 **CSS3 Customizado:** Paleta de cores própria (azul, verde-azulado e âmbar), variáveis de tema para modo claro/escuro, animações leves de entrada e efeitos de elevação nos cards.
+* 🅱️ **Bootstrap 5:** Sistema de Grid responsivo, barra de navegação fixa (`navbar sticky-top`) com Scrollspy, carrossel interativo (`carousel-fade`), cards e componentes estilizados.
+* ⚡ **JavaScript:** Controle de alternância entre **Modo Claro e Modo Escuro** (com preferência salva no navegador via `localStorage`) e botão dinâmico para voltar ao topo.
 * 🎯 **Devicon:** Biblioteca de ícones vetoriais para representar visualmente as tecnologias dominadas (HTML5, CSS3, Bootstrap, Python, GitHub e VS Code).
 
 ---
 
 ## 🧩 Estrutura do Portfólio
 
-O site está dividido em quatro blocos principais:
+O site está organizado nas seguintes seções principais:
 
 | Seção | Descrição |
 | :--- | :--- |
-| 🧭 **Barra de Navegação** | Menu responsivo fixo no topo (`sticky-top`) com links rápidos para cada seção. |
-| 🖼️ **Carrossel de Destaque** | Banner rotativo em tela cheia (`carousel-fade`) apresentando destaques visuais do portfólio. |
-| 👨‍💻 **Perfil Profissional** | Apresentação pessoal, localização, formação (ETEC e Univesp), áreas de interesse (Desenvolvimento e IA) e stack de ferramentas. |
-| 📂 **Vitrine de Projetos** | Cards interativos com links diretos para projetos práticos, como o *Sistema em Python* e páginas desenvolvidas na ETEC. |
+| 🧭 **Barra de Navegação** | Menu responsivo fixo no topo (`sticky-top`) com destaque ativo (Scrollspy) e alternador de tema Claro/Escuro. |
+| 🖼️ **Carrossel de Destaque** | Banner rotativo em tela cheia (`carousel-fade`) com carregamento otimizado e botão de ação *"Ver projetos"*. |
+| 👨‍💻 **Perfil & Formação** | Apresentação profissional, linha do tempo da formação acadêmica (ETEC e Univesp), seção de currículo com link para o LinkedIn e stack de ferramentas. |
+| 📂 **Vitrine de Projetos** | Cards interativos com elevação ao passar o mouse e links diretos para projetos práticos (incluindo o *Sistema de Monitoramento de Reservatório de Água em Python*). |
 | 📬 **Contato** | Links diretos para E-mail, GitHub e LinkedIn para conexões profissionais. |
+
+---
+
+## ✨ Melhorias Realizadas no Código
+
+Em relação à primeira versão, o portfólio passou por uma etapa de refatoração, correções técnicas e aprimoramentos de design:
+
+* 🛠️ **Correções Técnicas e de Funcionamento:**
+  * Ajuste no botão do menu mobile (correção dos atributos `data-bs-toggle` e `data-bs-target`).
+  * Correção de classes digitadas incorretamente (`align-items-center`), remoção de CSS duplicado no carrossel e definição das classes `profile-img` e `project-img`.
+  * Inclusão de espaços adequados entre atributos HTML e adição de `rel="noopener noreferrer"` nos links externos para maior segurança.
+* ♿ **Acessibilidade, SEO e Desempenho:**
+  * Adição de título principal `<h1>` na página e rótulos de acessibilidade (`aria-label`).
+  * Remoção do `lazy loading` no primeiro banner do carrossel para acelerar o carregamento inicial da página.
+  * Atualização da descrição do projeto em Python para refletir fielmente sua função: o **monitoramento de um reservatório de água**.
+* 🎨 **Conteúdo, Design e Experiência do Usuário (UX):**
+  * Criação de uma **linha do tempo de formação acadêmica**, seção de **currículo com link para o LinkedIn** e ajuste do posicionamento para *"Estudante de Desenvolvimento de Sistemas e IA"*.
+  * Implementação de **paleta de cores própria** (azul, verde-azulado e âmbar) substituindo o padrão do Bootstrap, além de **modo claro/escuro** persistente no navegador.
+  * Adição de rolagem suave, destaque do item ativo no menu (**Scrollspy**), botão para voltar ao topo, animações leves de entrada e efeito de elevação nos cards.
+* 🤖 **Revisão Assistida:** As alterações técnicas foram realizadas com o auxílio do **Claude Sonnet 5.5** por meio da ferramenta **Perplexity**, que revisou o código, apontou falhas e sugeriu boas práticas de acessibilidade e desempenho, cabendo a mim todas as decisões finais de conteúdo e design.
 
 ---
 
